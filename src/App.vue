@@ -1,18 +1,23 @@
 <template>
 <Container>
 <ChatWindow>
-<ChatMessage>
+<ChatMessage username="Ivan" time="21.12.2019 05:00:05">
+  Hello, world!!!
 </ChatMessage>
 </ChatWindow>
 </Container>
 </template>
 <script>
 import Container from "./components/MyContainer.vue";
+import Container from "./components/ChatWindow.vue";
+import Container from "./components/ChatMessage.vue";
 
 export default {
   name: "App",
   components: {
     Container,
+    ChatWindow,
+    ChatMessage,
   },
 };
 </script>
