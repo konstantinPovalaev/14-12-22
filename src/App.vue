@@ -10,12 +10,12 @@ export default {
   name: 'App',
   components: {
     HelloWorld,
-  }
+  },
   one(){
     name : "",
     phone: "",
     photo: ""
-  }
+  },
   two(){
     this.axios.get('https://randomuser.me/api/')         
     .then((response) => {
