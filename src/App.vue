@@ -9,8 +9,8 @@
 </template>
 <script>
 import Container from "./components/MyContainer.vue";
-import Container from "./components/ChatWindow.vue";
-import Container from "./components/ChatMessage.vue";
+import ChatWindow from "./components/ChatWindow.vue";
+import ChatMessage from "./components/ChatMessage.vue";
 
 export default {
   name: "App",
