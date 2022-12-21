@@ -12,8 +12,8 @@ export default {
     HelloWorld,
   },
   one(){
-    name  ""
-    phone ""
+    name  "",
+    phone "",
     photo ""
   },
   two(){
