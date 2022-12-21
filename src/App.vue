@@ -1,40 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App" :name="name" :phone="phone" :photo="photo"/>
+<Container>
+<ChatWindow>
+<ChatMessage>
+</ChatMessage>
+</ChatWindow>
+</Container>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Container from "./components/MyContainer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld,
+    Container,
   },
-  one(){
-    name:  "",
-    phone: "",
-    photo: ""
-  },
-  two(){
-    this.axios.get('https://randomuser.me/api/')         
-    .then((response) => {
-      console.log(response.data),
-      this.name = "kosty" 
-      this.phone = "89295856468" 
-      this.photo ="aa"    
-    }) 
-  }
-}
+};
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0;
+  background-color: #f9f9fa;
 }
 </style>
