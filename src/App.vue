@@ -12,9 +12,9 @@ export default {
     HelloWorld,
   },
   one(){
-    name : "",
-    phone: "",
-    photo: ""
+    name  ""
+    phone ""
+    photo ""
   },
   two(){
     this.axios.get('https://randomuser.me/api/')         
